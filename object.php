@@ -9,4 +9,5 @@ echo " Addres : {$person->addres}" . PHP_EOL;
 echo " Country : {$person->country}" . PHP_EOL;
 
 $person->sayHello("Budi");
+$person->sayHello(null);
 ?>
