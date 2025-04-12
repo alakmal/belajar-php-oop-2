@@ -7,6 +7,11 @@ class Person {
     var string $country = "Indonesia";
     const AUTHOR = "programmer zaman now";
 
+    function info(){
+
+        echo "AUTHOR : " . self::AUTHOR . PHP_EOL;
+    }
+
     function sayHello(?string $name) {
         
         if ( is_null($name)){
