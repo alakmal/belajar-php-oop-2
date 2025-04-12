@@ -5,6 +5,7 @@ class Person {
     var string $name = 'eko';
     var ?string $addres = null;
     var string $country = "Indonesia";
+    const AUTHOR = "programmer zaman now";
 
     function sayHello(?string $name) {
         
