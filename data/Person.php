@@ -2,9 +2,9 @@
 
 
 class Person {
-    var $name;
-    var $addres;
-    var $country;
+    var  string $name;
+    var string $addres;
+    var string $country;
 }
 
 ?>
