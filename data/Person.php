@@ -7,6 +7,13 @@ class Person {
     var string $country = "Indonesia";
     const AUTHOR = "programmer zaman now";
 
+
+    public function __construct(string $name, ?string $addres)
+    {
+        $this->name = $name;
+        $this->addres = $addres;
+    }
+
     function info(){
 
         echo "AUTHOR : " . self::AUTHOR . PHP_EOL;
