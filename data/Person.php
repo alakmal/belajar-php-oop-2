@@ -22,10 +22,16 @@ class Person
     {
         echo " Person {$this->name} is running" . PHP_EOL;
     }
+
+    public function goodBye(?string $name): void
+    {
+        echo "Override trait SayGoodBye " . PHP_EOL;
+    }
 }
 
 
 $person = new Person();
+// goodbye telah di override
 $person->goodBye("ga");
 $person->name = "akmal";
 echo "Name is : {$person->name}" . PHP_EOL;
