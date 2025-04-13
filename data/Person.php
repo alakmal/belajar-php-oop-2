@@ -8,3 +8,7 @@ class Person
 {
     use SayGoodBye;
 }
+
+
+$person = new Person();
+$person->goodBye("ga");
