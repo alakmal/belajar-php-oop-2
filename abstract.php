@@ -1,8 +1,9 @@
 <?php
 
-require_once "data/Location.php";
+require_once "data/Animal.php";
 
-use Data\{Location, City};
+use Data\{Animal, Cat};
 
-// $location = new Location(); // error
-$city = new City();
+$cat = new Cat();
+$cat->name = "Luna";
+$cat->run();
