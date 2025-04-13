@@ -2,6 +2,8 @@
 
 require_once "data/SayGoodBye.php";
 
+namespace Data;
+
 use Data\SayGoodBye;
 
 trait HasName
