@@ -4,5 +4,4 @@
 $date = new DateTime();
 $date->setTimezone(new DateTimeZone("Asia/Jakarta"));
 
-
-var_dump($date);
+echo $date->format("Y-m-d H:i:s");
