@@ -21,8 +21,8 @@ function validateLoginRequest(LoginRequest $loginRequest)
 
 
 $loginRequest = new LoginRequest();
-$loginRequest->username = "";
-$loginRequest->password = "";
+$loginRequest->username = "akmal";
+$loginRequest->password = "rahasia";
 
 try {
     validateLoginRequest($loginRequest);
@@ -30,4 +30,6 @@ try {
     echo "Error : {$exception->getMessage()}" . PHP_EOL;
 } catch (\Exception $exception) {
     echo "Error : {$exception->getMessage()}" . PHP_EOL;
+} finally {
+    echo "Error gak Error tetap dipanggil " . PHP_EOL;
 }
