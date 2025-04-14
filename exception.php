@@ -21,4 +21,9 @@ function validateLoginRequest(LoginRequest $loginRequest)
 
 
 $loginRequest = new LoginRequest();
-validateLoginRequest($loginRequest);
+
+try {
+    validateLoginRequest($loginRequest);
+} catch (ValidationException $exception) {
+    echo "Error : {$exception->getMessage()}" . PHP_EOL;
+}
