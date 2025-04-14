@@ -16,4 +16,14 @@ class Zero
     {
         $this->properties[$name] = $value;
     }
+
+    public function __isset($name)
+    {
+        return isset($this->properties[$name]);
+    }
+
+    public function __unset($name)
+    {
+        unset($this->properties[$name]);
+    }
 }

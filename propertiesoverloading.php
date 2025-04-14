@@ -7,7 +7,7 @@ use Data\Zero;
 
 $zero = new Zero();
 
-echo $zero->name . PHP_EOL;
+// echo $zero->name . PHP_EOL;
 $zero->id = 1;
 echo $zero->id . PHP_EOL;
 
