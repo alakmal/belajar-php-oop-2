@@ -26,4 +26,17 @@ class Zero
     {
         unset($this->properties[$name]);
     }
+
+    public function __call($name, $arguments)
+    {
+        $join = join(",", $arguments);
+        echo "Call function $name with arguments $join" . PHP_EOL;
+    }
+
+    public static function __callStatic($name, $arguments)
+    {
+
+        $join = join(",", $arguments);
+        echo "Call static   function $name with arguments $join" . PHP_EOL;
+    }
 }
