@@ -8,4 +8,9 @@ class Student
     public string $id;
     public string $name;
     public string $value;
+
+    public function __clone()
+    {
+        unset($this->value);
+    }
 }
