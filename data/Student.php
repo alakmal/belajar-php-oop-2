@@ -13,4 +13,9 @@ class Student
     {
         unset($this->value);
     }
+
+    public function __toString()
+    {
+        return "Student id : {$this->id} , name : {$this->name}, value : {$this->value}";
+    }
 }
